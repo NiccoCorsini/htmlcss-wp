@@ -58,6 +58,7 @@ main .info{
     background-position: center;
     background-size: cover;
     margin-bottom: 45px;
+    border-radius: 15px;
 }
 
 main .info .layover{
@@ -87,37 +88,70 @@ main .info .layover .text-container p{
 
 
 /* INTERACTIONS */
-.clearfix::after{
+main .clearfix::after{
     content: '';
     display: table;
     clear: both;
 } 
 
-.interactions{
-    padding-bottom: 15px;
-    background-color: #3287ff;
+main .interactions{
+    padding-bottom: 45px;
 }
 
-.interactions .int{
+main .interactions .int{
     float: left;
-    background-color: #abcfe7;
 }
 
-.interactions .title.int{
+main .interactions .title.int{
     width: 100%;
-    height: 50px;
+    margin-bottom: 45px;
+}
+
+main .interactions .title.int .leadership h2{
+    color: black;
+    font-size: 45px;
+}
+
+main .interactions .int:nth-of-type(even){
+    width: 20%;
+}
+
+main .interactions .center{
+    width: calc(60% - 30px);
+    margin: 0 15px;
+}
+
+/* MAIN INTERACTIONS UTILITY */
+main .interactions section.int .img{
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+main .interactions section.int .img .layover-img{
+    height: 280px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main .interactions section.int .content h3{
+    color: black;
     margin-bottom: 20px;
 }
 
-.interactions .int:nth-of-type(even){
-    width: 20%;
-    height: 550px;
+/* INTERACTIONS CONTENTS */
+main .interactions section.int:nth-child(2) .img{
+    background-image: url(../img/img-1.jpg);
 }
 
-.interactions .center{
-    width: calc(60% - 30px);
-    margin: 0 15px;
-    height: 550px;
+main .interactions section.int:nth-child(3) .img{
+    background-image: url(../img/img-2.jpg);
+}
+
+main .interactions section.int:last-child .img{
+    background-image: url(../img/img-3.jpg);
 }
 
 /* FOOTER */
