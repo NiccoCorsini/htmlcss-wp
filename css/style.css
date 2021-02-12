@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
     color: #aeaeae;
 }
 
@@ -17,7 +19,7 @@
 
 /* HEADER */
 header{
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 header a, header nav.nav-menu ul li a{
@@ -26,7 +28,7 @@ header a, header nav.nav-menu ul li a{
 
 header a img{
     width: 220px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 header nav.nav-menu ul{
@@ -37,7 +39,6 @@ header nav.nav-menu ul{
 header nav.nav-menu ul > li{
     display: inline-block;
     margin-right: 15px;
-    font-size: 18px;
 }
 
 header nav.nav-menu ul > li a:hover{
@@ -52,11 +53,38 @@ main{
 }
 
 /* INFO */
-.info{
-    height: 550px;/* fake content */
-    background-color: #e1d579;
-    margin-bottom: 20px;
+main .info{
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 45px;
 }
+
+main .info .layover{
+    height: 670px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main .info .layover .text-container{
+    width: 50%;
+    padding-top: 420px;
+    padding-left: 70px;
+}
+
+main .info .layover .text-container *{
+    color: white;
+}
+
+main .info .layover .text-container h1{
+    line-height: 48px;
+    font-size: 35px;
+}
+
+main .info .layover .text-container p{
+    line-height: 30px;
+}
+
 
 /* INTERACTIONS */
 .clearfix::after{
